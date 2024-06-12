@@ -28,7 +28,7 @@ body {
 
 @keyframes borderTransition {
     0% {
-        border-color: rgb(255, 0, 0); 
+        border-color: rgb(255, 0, 170); 
     }
     50% {
         border-color: blue; 
@@ -95,7 +95,7 @@ p:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #6b811a;
+    color: #1a6c81;
     background: rgba(5, 5, 5, .9);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
     border-radius: 7px;
