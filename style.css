@@ -34,7 +34,7 @@ body {
         border-color: blue; 
     }
     100% {
-        border-color: green; 
+        border-color: rgb(158, 1, 231); 
     }
 }
 
@@ -66,14 +66,14 @@ button:hover{
 
 body {
     height: 100vh;
-    background: linear-gradient(to left, blue, rgb(7, 173, 224), rgb(116, 32, 211));
+    background: linear-gradient(to left, #0051ffe0, rgb(0, 153, 255), rgb(10, 177, 219));
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 p:hover {
-    color: green; 
+    color: rgb(2, 155, 147); 
     font-weight: bold;
 }
 
@@ -95,7 +95,7 @@ p:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #6b811a;
+    color: #32811a;
     background: rgba(5, 5, 5, .9);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
     border-radius: 7px;
