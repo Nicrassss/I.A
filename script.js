@@ -8,6 +8,14 @@ const perguntas = [
 {
     enunciado: "Imagine você precisando de assistência até que você descobre uma ferramenta ferramenta muito útil que pode ser utiliad em várias situações, estas são as famigeradas inteligências artificiais. Qual o primeiro pensamento?",
     alternativas: [
+        {
+            texto: "Isso é assustador",
+            afirmacao: "afirmacao",
+        }
+        {
+            texto:"Isso é maravilhoso"
+            afirmacao:afirmacao;
+        }
     "Isso é bizarro!",
     "Isso é incrível!"
 
@@ -55,3 +63,14 @@ function motraPergunta() {
     PerguntaAtual = perguntas[atual]
     caixasPergunta.textContent = perguntaAtual
 }
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
+            const botaoAlternativas = document.createElement("button");
+            botaoAlternativas.textContent = alternativa.texto;
+            botaoAlternativas.addEventListener("click", function(){
+                atual++;
+                mostraPergunta();
+            })
+            caixaAlternativas.appendChild(botaoAlternativas);
+    }
+
