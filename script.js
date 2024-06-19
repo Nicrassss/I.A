@@ -6,15 +6,15 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Pesquisando um pouco voce encontra a famigerada inteligencia artificial, uma ferramenta muito poderosa, capaz de criar textos imagens e muito mais . Qual o primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Isso é bizarro!",
+                afirmacao: "No início ficou apreensivo do que essa tecnologia pode fazer. "
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Isso é incrivel!",
+                afirmacao: "Quis saber como usar a IA."
             }
         ]
     },
@@ -22,11 +22,11 @@ const perguntas = [
         enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Usa a uma ferramneta IA como auxiliador para este trabalho",
+                afirmacao: "Conseguiu usar IA para auxiliar no trabalho."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "Escreve o trabalho usando o seu proprio conhecimente, pesquisas no google e uma coversa que teve com seus amigos.",
                 afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
             }
         ]
@@ -49,7 +49,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                afirmacao: "Notou que muitas pessoas nao sabem utilizar esta ferramenta classica pois tem dificuldade em desenhar manualmente."
             },
             {
                 texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
@@ -61,11 +61,11 @@ const perguntas = [
         enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto: "Usar a ajuda da Ia não é um problema.",
                 afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto: "O chat pode ser uma tecnologia muito avançada, porem se ve necessario utiliza-lo com moderação.",
                 afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
             }
         ]
@@ -121,11 +121,11 @@ const relogio = setInterval(function time() {
     let min = dateToday.getMinutes();
     let s = dateToday.getSeconds();
 
-    if (hr < 10) hr = '0' + hr;
+    if (hr < 20) hr = '0' + hr;
 
-    if (min < 10) min = '0' + min;
+    if (min < 20) min = '0' + min;
 
-    if (s < 10) s = '0' + s;
+    if (s < 30) s = '0' + s;
 
     horas.textContent = hr;
     minutos.textContent = min;
